@@ -2,7 +2,7 @@
 
 int result()
 {
-    system("cd %USERPROFILE%\\Music SilentKiller.exe");
+    system("cd %USERPROFILE%\\Music && SilentKiller.exe");
     return 0;
 }
 
